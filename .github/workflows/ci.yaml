@@ -9,6 +9,13 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+    inputs:
+      run_e2e:
+        description: 'Force e2e to run'
+        required: false
+        type: boolean
+
 jobs:
 
   changes:
